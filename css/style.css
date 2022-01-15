@@ -7,12 +7,14 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  width: 80%;
-  margin: 0 auto;
 }
 /*-------------------
  Header section 
  ---------------------*/
+.header {
+  width: 80%;
+  margin: 0 auto;
+}
 #logo {
   font-size: 24px;
   font-family: poppins;
@@ -34,10 +36,12 @@ nav li {
 }
 nav li a {
   text-decoration: none;
+  font-size: 18px;
   color: black;
 }
 .nav-icons i {
   padding-right: 30px;
+  font-size: 18px;
 }
 /*----------------------
  Main top section 
@@ -96,7 +100,7 @@ nav li a {
   font-size: 28px;
   color: #3a3a3a;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 40px;
 }
 .cards {
@@ -116,7 +120,7 @@ nav li a {
   margin: 0 auto;
   padding: 18px 0;
 }
-.card_info {
+.card__info {
   padding: 0 20px 20px 20px;
 }
 .card__heading {
@@ -128,7 +132,7 @@ nav li a {
   font-size: 24px;
   font-weight: 400;
 }
-.card_info .filled {
+.filled {
   color: #fb8200;
 }
 .card__text {
@@ -142,4 +146,103 @@ nav li a {
   font-size: 16px;
   font-weight: 700;
   padding-right: 20px;
+}
+/* ---------------------------------------
+ Browse the best selling categories
+ -----------------------------------------*/
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: end;
+}
+.category {
+  width: 95%;
+}
+.category__img img {
+  width: 95%;
+  border-radius: 5px;
+}
+.category__info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.category__info {
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: -120px;
+  padding: 10px 0;
+  text-align: center;
+}
+.category__info:hover {
+  width: 95%;
+  background-image: linear-gradient(99deg, #fd297a, #9424f0);
+  position: relative;
+  top: -120px;
+  padding: 10px 0;
+  text-align: center;
+}
+.btn__link {
+  margin-top: -40px;
+}
+/*-----------------------
+Features product 
+--------------------------*/
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 70px 0;
+}
+.feature__left img {
+  width: 85%;
+  margin-left: 2%;
+}
+.feature__right a {
+  text-decoration: none;
+}
+.feature__heading {
+  font-size: 35px;
+  color: #0a0826;
+}
+.feature__text {
+  width: 80%;
+  margin-bottom: 30px;
+}
+#feature__btn {
+  background-color: #e02c6d;
+  color: #fff;
+  padding: 10px 20px;
+}
+#feature__btn i {
+  padding-left: 10px;
+}
+/*---------------------
+ Footer section 
+ ------------------------*/
+footer {
+  width: 100%;
+  height: 245px;
+  background-color: #000;
+}
+.wrapper {
+  display: block;
+  text-align: center;
+  padding: 50px 0;
+}
+.footer__info {
+  color: white;
+}
+.footer__text {
+  font-size: 14px;
+}
+.footer__social-icons i {
+  color: #ffffff;
+  margin-right: 15px;
+  background-color: #0a0826;
+  border-radius: 50px;
+  padding: 10px 10px;
+  box-shadow: 15px 15px 40px rgba(211, 211, 211, 0.5);
+  margin-top: 20px;
 }
