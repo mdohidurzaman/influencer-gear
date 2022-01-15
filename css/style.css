@@ -39,3 +39,41 @@ nav li a {
 .nav-icons i {
   padding-right: 30px;
 }
+/*----------------------
+ Main top section 
+ -----------------------*/
+.influencer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+}
+.influencer__left {
+  width: 90%;
+  padding-top: 50px;
+}
+.influencer__heading {
+  font-size: 40px;
+  color: #3a3a3a;
+  font-family: poppins;
+  font-size: 52px;
+  font-weight: 700;
+}
+.influencer__text {
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.influencer__btn {
+  text-decoration: none;
+  background-color: #e02c6d;
+  border-radius: 25px;
+  color: #ffffff;
+  padding: 10px 18px;
+  font-weight: 700;
+}
+.influencer__btn i {
+  padding-left: 10px;
+}
+.influencer__right {
+  display: inline-block;
+  margin: 0 auto;
+}
