@@ -12,15 +12,21 @@ body {
  Header section 
  ---------------------*/
 .header {
+  background-color: #fff;
+}
+.container {
   width: 80%;
   margin: 0 auto;
 }
+
 #logo {
   font-size: 24px;
   font-family: poppins;
   font-weight: 700;
 }
 nav {
+  width: 80%;
+  margin: 0 auto;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -245,4 +251,91 @@ footer {
   padding: 10px 10px;
   box-shadow: 15px 15px 40px rgba(211, 211, 211, 0.5);
   margin-top: 20px;
+}
+/*----------------------
+ Media quaries 
+ ------------------------*/
+/* Mobile device */
+@media only screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+  }
+  #logo {
+    margin: 0 auto;
+  }
+  .influencer,
+  .cards,
+  .categories,
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .influencer__left {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .brand__logs {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .card__details {
+    width: 100%;
+  }
+  .category {
+    padding-left: 5%;
+  }
+
+  .feature__right {
+    padding: 0 5%;
+    text-align: center;
+  }
+  #display__mobile-tablet {
+    display: none;
+  }
+}
+/* Tablet device */
+@media only screen and (min-width: 669px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  #logo {
+    margin: 0 auto;
+  }
+  .influencer,
+  .cards,
+  .categories,
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .brand__logs {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .collection__heading {
+    margin-bottom: 100px;
+  }
+  .category {
+    margin-top: -40px;
+    padding-left: 10%;
+  }
+  .feature__left img {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #display__mobile-tablet {
+    display: none;
+  }
+}
+/* Laptop device */
+@media only screen and (min-width: 992px) and (max-width: 1312px) {
+  #display__mobile-tablet {
+    display: none;
+  }
+  #logo {
+    margin: 0 auto;
+  }
 }
